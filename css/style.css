@@ -8,8 +8,8 @@
   --line: #e7e4de;
   --bg: #ffffff;
   --card: #dedcd8;
-  --serif-display: "Playfair Display", "Noto Serif KR", serif;
-  --serif-body: "Noto Serif KR", "Playfair Display", serif;
+  --serif-display: "Playfair Display", "Pretendard Variable", "Pretendard", sans-serif;
+  --body-font: "Pretendard Variable", "Pretendard", -apple-system, BlinkMacSystemFont, sans-serif;
   --ease: cubic-bezier(.65,0,.35,1);
   --dur: .9s;
 }
@@ -21,7 +21,7 @@ body{
   margin:0;
   background: var(--bg);
   color: var(--ink);
-  font-family: var(--serif-body);
+  font-family: var(--body-font);
   -webkit-font-smoothing: antialiased;
   overflow: hidden; /* fullpage hijacks scroll */
 }
@@ -143,6 +143,8 @@ img{ display:block; max-width:100%; }
 .reveal-lines .line{
   display:block;
   overflow:hidden;
+  padding-bottom: 0.2em; /* leaves room for descenders (y, g, j...) so overflow:hidden doesn't clip them */
+  margin-bottom: -0.2em;
 }
 .reveal-lines .word{
   display:inline-block;
@@ -175,7 +177,7 @@ img{ display:block; max-width:100%; }
   font-family: var(--serif-display);
   font-weight:700;
   font-size: clamp(48px, 8vw, 108px);
-  line-height:.98;
+  line-height:1.05;
   letter-spacing:-.01em;
 }
 
@@ -197,7 +199,7 @@ img{ display:block; max-width:100%; }
   display:flex;
   justify-content:center;
   gap: clamp(14px,2.2vw,28px);
-  margin-top: clamp(36px,7vh,72px);
+  margin-top: clamp(56px,10vh,100px);
 }
 .hero-slot{
   flex: 1 1 0;
