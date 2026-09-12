@@ -233,7 +233,7 @@ img{ display:block; max-width:100%; }
 /* =========================================================
    2. ABOUT
    ========================================================= */
-.about-inner{ padding-top: 12vh; padding-bottom: 6vh; height:100%; overflow-y:auto; }
+.about-inner{ padding-top: 12vh; padding-bottom: 6vh; }
 .section-title{
   font-family: var(--serif-display);
   font-weight:600;
@@ -442,5 +442,4 @@ img{ display:block; max-width:100%; }
   .about-columns{ grid-template-columns:1fr; gap:20px; }
   .work-grid{ flex-wrap:wrap; }
   .work-card{ flex:1 1 40%; top:0 !important; aspect-ratio: 1/1; }
-  .about-inner{ overflow-y:visible; }
 }
