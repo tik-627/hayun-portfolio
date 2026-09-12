@@ -44,7 +44,7 @@ img{ display:block; max-width:100%; }
   display:flex;
   align-items:center;
   justify-content:space-between;
-  padding: clamp(20px,3vh,34px) clamp(20px,4vw,64px);
+  padding: clamp(20px,3vh,34px) clamp(28px,6vw,96px);
   pointer-events:none;
 }
 .site-header .logo,
@@ -134,9 +134,9 @@ img{ display:block; max-width:100%; }
 }
 .panel-inner{
   width:100%;
-  max-width:1440px;
+  max-width:1180px;
   margin:0 auto;
-  padding: 0 clamp(20px,4vw,64px);
+  padding: 0 clamp(28px,6vw,96px);
 }
 
 /* -------------------- text reveal -------------------- */
@@ -195,11 +195,13 @@ img{ display:block; max-width:100%; }
 
 .hero-carousel{
   display:flex;
-  gap: clamp(10px,1.6vw,22px);
+  justify-content:center;
+  gap: clamp(14px,2.2vw,28px);
   margin-top: clamp(36px,7vh,72px);
 }
 .hero-slot{
-  flex:1 1 0;
+  flex: 1 1 0;
+  max-width: 190px;
   min-width:0;
   text-align:center;
 }
@@ -214,7 +216,8 @@ img{ display:block; max-width:100%; }
 .hero-slot-frame{
   position:relative;
   display:block;
-  aspect-ratio: 3/4.6;
+  aspect-ratio: 3/4.2;
+  max-height: 340px;
   border-radius: 18px;
   overflow:hidden;
   background: #C4C4C4;
@@ -230,7 +233,7 @@ img{ display:block; max-width:100%; }
 /* =========================================================
    2. ABOUT
    ========================================================= */
-.about-inner{ padding: 12vh 0 6vh; height:100%; overflow-y:auto; }
+.about-inner{ padding-top: 12vh; padding-bottom: 6vh; height:100%; overflow-y:auto; }
 .section-title{
   font-family: var(--serif-display);
   font-weight:600;
